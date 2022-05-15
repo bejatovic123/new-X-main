@@ -1,0 +1,12 @@
+.wrapperImage__main {
+    img {
+        user-select: none;
+        height: Min(100%, 100%);
+        padding-top: 1em;
+
+        //transform: scaleY(1.05);
+        //border: 2px solid $teritaryColor;
+        //border-radius: 0.5em 0 0 0.5em;
+        //border-radius: 0.5em;
+    }
+}

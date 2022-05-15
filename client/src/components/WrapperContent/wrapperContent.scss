@@ -1,0 +1,41 @@
+.wrapperContent__main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 4%;
+    padding-left: 10%;
+
+    > * {
+        flex-basis: 100%;
+    }
+
+    &.seatcontent {
+        overflow-y: auto;
+        padding: 0;
+    }
+}
+
+
+@media (min-width: 70rem) {
+    .wrapperContent__main {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        padding: 4%;
+        padding-left: 10%;
+    
+        > * {
+            flex-basis: 100%;
+        }
+    
+        &.seatcontent {
+            overflow-y: auto;
+            padding: 0;
+        }
+    }
+    
+}

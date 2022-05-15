@@ -1,0 +1,39 @@
+$primaryColor: #ffffff;
+$acentColor: #60beb3;
+$teritaryColor: #4a5c73;
+$darkColor: #171718;
+$secondaryColor: #d8d9df;
+
+//light theme
+$light-BgColor: $teritaryColor;
+$light-CpColor: $primaryColor;
+$light-FilterColor: $acentColor;
+$light-TxtClr: $primaryColor;
+$light-TxtClrReverse: $darkColor;
+$light-bgImage: "../assets/rooms2.jpg";
+$light-toDark: #000000;
+
+//dark theme
+$dark-BgColor: #000000;
+$dark-CpColor: #000000;
+$dark-FilterColor: #ffa500;
+$dark-TxtClr: $primaryColor;
+$dark-TxtClrReverse: $darkColor;
+$dark-bgImage: "../assets/rooms3.jpg";
+$dark-toLight: $primaryColor;
+
+/**
+
+
+//dark theme
+$dark-BgColor: #000000;
+$dark-CpColor: #fdfdfd;
+$dark-FilterColor: #ffa500;
+$dark-TxtClr: $primaryColor;
+$dark-TxtClrReverse: $darkColor;
+
+
+
+
+
+**/

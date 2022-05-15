@@ -1,0 +1,66 @@
+.mybutton {
+    font-size: $fz-MyButton;
+    text-transform: uppercase;
+    padding: 0.5em 0;
+    margin: 0 0.5em;
+    @include button();
+    
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    &:hover:disabled {
+        cursor: auto;
+    }
+
+    &:active:disabled {
+        transform: scale(1);
+    }
+
+    &.not-scaleable {
+        display: none;
+        //border-top: 2px solid;
+        &:active {
+            transform: none;
+        }
+    }
+}
+
+@media (min-width: 70rem) {
+    .mybutton {
+        font-size: $fz-MyButton;
+        text-transform: uppercase;
+        padding: 0.5em 0;
+        margin: 0 0.5em;
+        @include button();
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+
+        &:hover:disabled {
+            cursor: auto;
+        }
+
+        &:active:disabled {
+            transform: scale(1);
+        }
+
+        &.not-scaleable {
+            display: block;
+            //border-top: 2px solid;
+            &:active {
+                transform: none;
+            }
+        }
+    }
+}

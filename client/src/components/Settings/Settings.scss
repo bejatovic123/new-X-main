@@ -1,0 +1,47 @@
+.settings__main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+
+    .wrapperButton__main {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+        overflow-y: auto;
+
+        > * {
+            flex-basis: content;
+        }
+    }
+
+    .wrapperImage__main {
+        height: 100%;
+        img {
+            width: 100%;
+            padding: 0;
+        }
+    }
+}
+
+@media (min-width: 60em) {
+    .settings__main {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+        .wrapperButton__main {
+            height: 100%;
+            width: 500px;
+            justify-content: flex-start;
+            gap: 20px;
+            overflow-y: auto;
+
+            > * {
+                flex-basis: content;
+            }
+        }
+    }
+}

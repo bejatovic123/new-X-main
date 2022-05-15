@@ -1,0 +1,41 @@
+@import './colors.scss';
+@import './global.scss';
+@import './font.scss';
+@import './theme.scss';
+@import './mixinStyles.scss';
+
+@import '../containers/Layout/layout.scss';
+@import '../containers/Pages/Dashboard/dashboard.scss';
+@import '../containers/Pages/Login/login.scss';
+@import '../containers/Pages/PasswordSetter/passwordSetter.scss';
+@import '../containers/Pages/PageNotFound/pageNotFound.scss';
+
+@import '../components/Header/header.scss';
+@import '../components/List/list.scss';
+@import '../components/Filter/filter.scss';
+@import '../components/CText/ctext.scss';
+@import '../components/Seatdata/seatdata.scss';
+@import '../components/MyButton/myButton.scss';
+@import '../components/WrapperButton/wrapperButton.scss';
+@import '../components/WrapperContent/wrapperContent.scss';
+@import '../components/WrapperCText/wrapperCText.scss';
+@import '../components/WrapperImage/wrapperImage.scss';
+@import '../components/DashboardComponents/accountInformation.scss';
+@import '../components/ThemeChanger/themeChange.scss';
+@import '../components/MyModal/myModal.scss';
+@import '../components/Settings/Settings.scss';
+@import '../components/MySelectionButton/mySelectionButton.scss';
+@import '../components/WrapperInput/wrapperInput.scss';
+@import '../components/WrapperSVG/wrapperSvg.scss';
+@import '../components/LoadingScreen/loadingScreen.scss';
+@import '../components/Header/subheader.scss';
+
+// @import '../components/UI/TableUi.scss';
+@import '../components/Room/RoomD/Room.scss';
+//@import 'css-grid';
+@import '../components/Room/sideMenu/menu.scss';
+@import '../components/Room/Modal/modal.scss';
+@import '../components/Room/RoomD/Table.scss';
+@import '../components/Room/RoomD/tableData.scss';
+@import 'react-calendar/dist/Calendar.css';
+@import '../components/Welcome/welcome.scss';

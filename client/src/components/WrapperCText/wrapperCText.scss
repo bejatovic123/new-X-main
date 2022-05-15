@@ -1,0 +1,23 @@
+.wrapperCText__main {
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    &.column {
+        flex-direction: column;
+    }
+
+    &.row {
+        flex-direction: row;
+    }
+
+    /*
+    >*{
+        //flex-basis: 100%;
+    }
+    */
+
+    &.filterCText {
+        justify-content: center;
+    }
+}

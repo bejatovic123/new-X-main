@@ -1,0 +1,14 @@
+.theme-chg-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2em;
+
+    svg {
+        transform: scale(3);
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,607 @@
+@mixin themeFunction(
+  $bgImage,
+  $bgClr,
+  $cpClr,
+  $primaryClr,
+  $secondaryClr,
+  $filterClr,
+  $txtClr,
+  $txtClrReverse,
+  $reverseClr,
+  $headClr
+) {
+  //background-color: $secondaryColor;
+  transition: $transitionTimer;
+  background: none;
+
+  * {
+    transition: $transitionTimer;
+    &::after {
+      transition: $transitionTimer;
+    }
+    &::before {
+      transition: $transitionTimer;
+    }
+  }
+
+  //background: url("https://bcmsolutions.de/wp-content/themes/bcm/img/bg-pattern-light.png");
+  header {
+    // background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 10%, rgba(255, 255, 255, 0.5));
+    background-color: $cpClr;
+
+
+    .navbar-mob {
+      .mybutton {
+        background-color: $primaryClr;
+        &.active {
+          background-color: $bgClr;
+        }
+      }
+    }
+  }
+
+  .navbar-mob {
+    .mybutton {
+      &:hover {
+        background-color: rgba($secondaryClr, 0.55);
+      }
+    }
+  }
+
+  .wrapperButton__main {
+    &.wrap {
+      > * {
+        background-color: transparent !important;
+        box-shadow: none !important;
+        flex-basis: content;
+        color: $secondaryClr;
+        &:hover {
+          color: $primaryClr;
+        }
+      }
+    }
+  }
+
+  .dashboard__main {
+    background: transparent;
+  }
+
+  .filterCp__main {
+    background-color: $secondaryClr;
+    color: $txtClr;
+    //border-color: $teritaryColor;
+  }
+
+  .accountInformation__main {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75) !important;
+    //background-color: $secondaryClr;
+    background-color: $txtClr;
+
+    .ai_settings {
+      color: $secondaryClr;
+    }
+  }
+
+  .horizontal_middle_figures {
+    &:before {
+      background-color: $secondaryClr;
+    }
+
+    &:after {
+      background-color: $secondaryClr;
+    }
+  }
+
+  .horizontal_middle_figures_head {
+    &:before {
+      background-color: $secondaryClr;
+    }
+
+    &:after {
+      background-color: $secondaryClr;
+    }
+  }
+
+  .wrapperCText__main {
+    background-color: white;
+
+    &.filterCText {
+      background-color: transparent;
+    }
+  }
+
+  .wrapperContent__main {
+    &.horizontal_middle_figures {
+      &:before {
+        background-color: $secondaryClr;
+      }
+
+      &:after {
+        background-color: $secondaryClr;
+      }
+    }
+  }
+
+  .wrappersvg__main {
+    svg {
+      color: $reverseClr;
+      &:hover {
+        color: $primaryClr;
+      }
+    }
+  }
+
+  .pageNotFound__main {
+    background-color: rgba(255, 255, 255, 0.514);
+
+    h1 {
+      color: $txtClrReverse;
+    }
+  }
+
+  .listCp__main {
+    .dashboardlist {
+      background-color: $secondaryClr;
+      color: $txtClr;
+
+      &:hover {
+        color: $primaryClr;
+      }
+    }
+
+    .list_selectionOptions {
+      background-color: $secondaryClr;
+    }
+  }
+
+  .ctextCp__main {
+    &.up {
+      color: $primaryClr;
+      &:after {
+        border-color: $primaryClr;
+      }
+    }
+
+    &.down {
+      color: $primaryClr;
+
+      &:after {
+        border-color: $primaryClr;
+      }
+    }
+
+    &.filterhead {
+      color: $txtClr;
+    }
+    &.disabled {
+      color: rgba(255, 255, 255, 0.25) !important;
+    }
+  }
+
+  .theme-chg-btn {
+    color: $reverseClr;
+  }
+
+  .mybutton {
+    color: $txtClr;
+    box-shadow: 0 0.1rem 0.5em rgba(0, 0, 0, 0.75) !important;
+    &.primary {
+      background-color: $secondaryClr;
+      &:hover {
+        background-color: #4d8f87;
+      }
+    }
+
+    &.secondary {
+      background-color: $secondaryClr;
+      &:hover {
+        background-color: #4d8f87;
+      }
+    }
+
+    &.warning {
+      background-color: #d18b8b;
+      &:hover {
+        background-color: #cc6363;
+      }
+      &:disabled {
+        background-color: #ddb9b9;
+      }
+    }
+
+    &.not-scaleable {
+      background-color: $secondaryClr;
+      border-color: $secondaryClr;
+    }
+  }
+
+  .seatdata__main {
+    background-color: $txtClr;
+
+    &:nth-child(2n + 1) {
+      background-color: #f7f5f5;
+    }
+
+    &.oldbook {
+      background-color: #d8d9df;
+      color: $txtClrReverse;
+    }
+  }
+
+  .workRoom {
+    .firstPlace {
+      background-color: #f7f5f5a8; //$txtClr;
+    }
+  }
+
+  .myModal__main {
+    background-color: rgba(0, 0, 0, 0.411);
+
+    .myModal__content {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75) !important;
+      background-color: $txtClr;
+      .myModal__header {
+        border-bottom-color: $secondaryClr + a;
+        h1 {
+        }
+
+        .close_button {
+          background-color: transparent;
+          color: $secondaryClr;
+        }
+      }
+
+      /*
+    .myModal__body {
+      //border-bottom-color: $secondaryClr+a6;
+    }
+    */
+
+      .myModal__footer {
+        border-bottom-color: $secondaryClr + a;
+      }
+    }
+  }
+
+  .settings__main {
+    .wrapperImage__main {
+      img {
+        box-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.185) !important;
+      }
+    }
+  }
+
+  .displayed__information__content {
+    background-color: rgba(0, 0, 0, 0.438);
+
+    &:after {
+      border-top-color: rgba(0, 0, 0, 0.438);
+    }
+  }
+
+  .myselectionbutton__main {
+    background-color: transparent;
+    border-color: $primaryClr;
+
+    &.active {
+      background-color: $primaryClr;
+    }
+
+    &.disabled {
+      background-color: #d8d9df;
+      border-color: #d8d9df;
+    }
+  }
+
+  /**********************************************
+
+                DESKTOP  ANSICHT
+
+**********************************************/
+
+  @media (min-width: 70rem) {
+    //background-color: $secondaryColor;
+    transition: $transitionTimer;
+    // background: url($bgImage);
+    background-color: $primaryClr;
+    background-size: cover;
+    background-position: 50% 50%;
+
+    * {
+      transition: $transitionTimer;
+      &::after {
+        transition: $transitionTimer;
+      }
+      &::before {
+        transition: $transitionTimer;
+      }
+    }
+
+    //background: url("https://bcmsolutions.de/wp-content/themes/bcm/img/bg-pattern-light.png");
+    header {
+      background-color: $cpClr;
+
+      .navbar-mob {
+        .mybutton {
+          background-color: $primaryClr;
+          &.active {
+            background-color: $bgClr;
+          }
+        }
+      }
+    }
+
+    .wrapperButton__main {
+      &.wrap {
+        > * {
+          background-color: transparent !important;
+          box-shadow: none !important;
+          flex-basis: content;
+          // color: $reverseClr;
+          &:hover {
+            color: $primaryClr;
+          }
+        }
+      }
+    }
+
+    .dashboard__main {
+      background: transparent;
+    }
+
+    .filterCp__main {
+      background-color: $secondaryClr;
+      color: $txtClr;
+      //border-color: $teritaryColor;
+    }
+
+    .accountInformation__main {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75) !important;
+      //background-color: $secondaryClr;
+      background-color: $txtClr;
+
+      .ai_settings {
+        color: $secondaryClr;
+      }
+    }
+
+    .horizontal_middle_figures {
+      &:before {
+        background-color: $secondaryClr;
+      }
+
+      &:after {
+        background-color: $secondaryClr;
+      }
+    }
+
+    .horizontal_middle_figures_head {
+      &:before {
+        background-color: $secondaryClr;
+      }
+
+      &:after {
+        background-color: $secondaryClr;
+      }
+    }
+
+    .wrapperCText__main {
+      background-color: white;
+
+      &.filterCText {
+        background-color: transparent;
+      }
+    }
+
+    .wrapperContent__main {
+      &.horizontal_middle_figures {
+        &:before {
+          background-color: $secondaryClr;
+        }
+
+        &:after {
+          background-color: $secondaryClr;
+        }
+      }
+    }
+
+    .wrappersvg__main {
+      svg {
+        color: $reverseClr;
+        &:hover {
+          color: $primaryClr;
+        }
+      }
+    }
+
+    .pageNotFound__main {
+      background-color: rgba(255, 255, 255, 0.514);
+
+      h1 {
+        color: $txtClrReverse;
+      }
+    }
+
+    .listCp__main {
+      .dashboardlist {
+        background-color: $secondaryClr;
+        color: $txtClr;
+
+        &:hover {
+          color: $primaryClr;
+        }
+      }
+
+      .list_selectionOptions {
+        background-color: $secondaryClr;
+      }
+    }
+
+    .ctextCp__main {
+      &.up {
+        color: $primaryClr;
+        &:after {
+          border-color: $primaryClr;
+        }
+      }
+
+      &.down {
+        color: $primaryClr;
+
+        &:after {
+          border-color: $primaryClr;
+        }
+      }
+
+      &.disabled {
+        color: rgba(255, 255, 255, 0.25) !important;
+      }
+    }
+
+    .theme-chg-btn {
+      color: $reverseClr;
+    }
+
+    .mybutton {
+      color: $txtClr;
+      box-shadow: 0 0.1rem 0.5em rgba(0, 0, 0, 0.75) !important;
+
+      &.primary {
+        background-color: $secondaryClr;
+        &:hover {
+          background-color: #4d8f87;
+        }
+      }
+
+      &.secondary {
+        background-color: $secondaryClr;
+        &:hover {
+          background-color: #4d8f87;
+        }
+      }
+
+      &.warning {
+        background-color: #d18b8b;
+        &:hover {
+          background-color: #cc6363;
+        }
+        &:disabled {
+          background-color: #ddb9b9;
+        }
+      }
+
+      &.not-scaleable {
+        background-color: $secondaryClr;
+        border-color: $secondaryClr;
+      }
+    }
+
+    .seatdata__main {
+      background-color: $txtClr;
+
+      &:nth-child(2n + 1) {
+        background-color: #f7f5f5;
+      }
+
+      &.oldbook {
+        background-color: #d8d9df;
+        color: $txtClrReverse;
+      }
+    }
+
+    .workRoom {
+      .firstPlace {
+        background-color: #f7f5f5a8; //$txtClr;
+      }
+    }
+
+    .myModal__main {
+      background-color: rgba(0, 0, 0, 0.411);
+
+      .myModal__content {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75) !important;
+        background-color: $txtClr;
+        .myModal__header {
+          border-bottom-color: $secondaryClr + a;
+          h1 {
+          }
+
+          .close_button {
+            background-color: transparent;
+            color: $secondaryClr;
+          }
+        }
+
+        /*
+      .myModal__body {
+        //border-bottom-color: $secondaryClr+a6;
+      }
+      */
+
+        .myModal__footer {
+          border-bottom-color: $secondaryClr + a;
+        }
+      }
+    }
+
+    .settings__main {
+      .wrapperImage__main {
+        img {
+          box-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.185) !important;
+        }
+      }
+    }
+
+    .displayed__information__content {
+      background-color: rgba(0, 0, 0, 0.438);
+
+      &:after {
+        border-top-color: rgba(0, 0, 0, 0.438);
+      }
+    }
+
+    .myselectionbutton__main {
+      background-color: transparent;
+      border-color: $primaryClr;
+
+      &.active {
+        background-color: $primaryClr;
+      }
+
+      &.disabled {
+        background-color: #d8d9df;
+        border-color: #d8d9df;
+      }
+    }
+  }
+}
+
+.light {
+  @include themeFunction(
+    $light-bgImage,
+    $light-BgColor,
+    $light-CpColor,
+    $acentColor,
+    $teritaryColor,
+    $light-FilterColor,
+    $light-TxtClr,
+    $light-TxtClrReverse,
+    $light-toDark,
+    $teritaryColor
+  );
+}
+
+.dark {
+  @include themeFunction(
+    $dark-bgImage,
+    $dark-BgColor,
+    $dark-CpColor,
+    $acentColor,
+    $dark-CpColor,
+    $dark-FilterColor,
+    $dark-TxtClr,
+    $dark-TxtClrReverse,
+    $dark-toLight,
+    $teritaryColor
+  );
+}

@@ -1,0 +1,121 @@
+.accountInformation__main {
+    //box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75) !important;
+    //border: 2px solid $teritaryColor;
+    border-left: none;
+    display: none;
+    position: relative;
+    overflow: hidden;
+
+    //padding: 1em;
+    //border-radius: 0.5em 0 0 0.5em;
+
+    &.horizontal_middle_figures {
+        &:before {
+            z-index: 1;
+            content: "";
+            position: absolute;
+            //top: 0.6em;
+            top: 0em;
+            left: -5%;
+            width: 70%;
+            height: 1em;
+            transform: skew(-20deg);
+        }
+
+        &:after {
+            z-index: 1;
+            content: "";
+            position: absolute;
+            //bottom: 0.6em;
+            bottom: 0em;
+            right: -5%;
+            width: 70%;
+            height: 1em;
+            transform: skew(-20deg);
+        }
+    }
+
+    .ai_settings {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        margin: 20px;
+
+        svg {
+            transform: scale(2);
+        }
+        &:hover {
+            cursor: pointer;
+            svg {
+                animation: rotateAnimation 5s linear infinite;
+            }
+        }
+    }
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg) scale(2);
+    }
+    100% {
+        transform: rotate(360deg) scale(2);
+    }
+}
+
+@media (min-width: 70rem) {
+    .accountInformation__main {
+        //box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.75) !important;
+        //border: 2px solid $teritaryColor;
+        border-left: none;
+        display: flex;
+        min-height: 250px;
+        position: relative;
+        overflow: hidden;
+
+        //padding: 1em;
+        //border-radius: 0.5em 0 0 0.5em;
+
+        &.horizontal_middle_figures {
+            &:before {
+                z-index: 1;
+                content: "";
+                position: absolute;
+                //top: 0.6em;
+                top: 0em;
+                left: -5%;
+                width: 70%;
+                height: 1em;
+                transform: skew(-20deg);
+            }
+
+            &:after {
+                z-index: 1;
+                content: "";
+                position: absolute;
+                //bottom: 0.6em;
+                bottom: 0em;
+                right: -5%;
+                width: 70%;
+                height: 1em;
+                transform: skew(-20deg);
+            }
+        }
+
+        .ai_settings {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            margin: 20px;
+
+            svg {
+                transform: scale(2);
+            }
+            &:hover {
+                cursor: pointer;
+                svg {
+                    animation: rotateAnimation 5s linear infinite;
+                }
+            }
+        }
+    }
+}

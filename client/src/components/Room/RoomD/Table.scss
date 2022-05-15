@@ -1,0 +1,23 @@
+.tableOne {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px;
+  //justify-content: center;
+  align-items: center;
+  //justify-content: center;
+  //grid-template-columns: repeat(2, 1fr);
+  //grid-template-rows: repeat(auto-fill, 120px);
+}
+.col-tab {
+  width: 250px !important;
+  //background: #4E5F76;
+  height: fit-content;
+}

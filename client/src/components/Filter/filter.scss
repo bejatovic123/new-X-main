@@ -1,0 +1,103 @@
+.filterCp__main {
+    .filter__head {
+        display: flex;
+        width: 100%;
+        position: sticky;
+        font-weight: 700;
+        box-sizing: border-box;
+        padding: 1em 0 0.5em;
+        text-transform: uppercase;
+        font-size: $fz-CTextHeader;
+        font-family: $ff-OpenSansBold;
+        //border-bottom: 2px solid;
+
+        > * {
+            flex-basis: 100%;
+
+            &.selectOptions {
+                flex: 0;
+                min-width: 25px;
+                margin-right: 15px;
+                // margin-right: 23px;
+            }
+        }
+
+        .ctextCp__main {
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+
+    .filter__inputs {
+        display: none;
+        width: 100%;
+        position: sticky;
+        font-weight: 700;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        font-size: $fz-CTextHeader;
+        font-family: $ff-OpenSansBold;
+        > * {
+            flex-basis: 100%;
+
+            &.selectOptions {
+                flex: 0;
+                min-width: 25px;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+@media (min-width: 70rem) {
+    .filterCp__main {
+        .filter__head {
+            display: flex;
+            width: 100%;
+            position: sticky;
+            font-weight: 700;
+            box-sizing: border-box;
+            padding: 1em 0 0.5em;
+            text-transform: uppercase;
+            font-size: $fz-CTextHeader;
+            font-family: $ff-OpenSansBold;
+            //border-bottom: 2px solid;
+
+            > * {
+                flex-basis: 100%;
+
+                &.selectOptions {
+                    flex: 0;
+                    min-width: 25px;
+                    margin-right: 15px;
+                    // margin-right: 23px;
+                }
+            }
+
+            .ctextCp__main {
+                cursor: pointer;
+                user-select: none;
+            }
+        }
+
+        .filter__inputs {
+            display: flex;
+            width: 100%;
+            position: sticky;
+            font-weight: 700;
+            box-sizing: border-box;
+            text-transform: uppercase;
+            font-size: $fz-CTextHeader;
+            font-family: $ff-OpenSansBold;
+            > * {
+                flex-basis: 100%;
+
+                &.selectOptions {
+                    flex: 0;
+                    min-width: 25px;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}

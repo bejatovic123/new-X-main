@@ -1,0 +1,19 @@
+.dashboard__main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    opacity: 0.97;
+    height: 100%;
+    gap: 30px;
+}
+
+@media (min-width: 70rem) {
+    .dashboard__main {
+        display: flex;
+        flex-direction: column;
+        width: Min(85rem, 90%);
+        opacity: 0.97;
+        height: 100%;
+        gap: 30px;
+    }
+}

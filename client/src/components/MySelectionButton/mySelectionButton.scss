@@ -1,0 +1,26 @@
+.myselectionbutton__main {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    width: 100%;
+    aspect-ratio: 1;
+    min-width: 25px;
+
+    &.active {
+        background-color: red;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.disabled {
+        background-color: #7c7c7c;
+        border-color: #7c7c7c;
+
+        &:hover{
+            cursor: auto;
+        }
+    }
+}

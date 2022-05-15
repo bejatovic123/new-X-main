@@ -1,0 +1,28 @@
+.navbar-mob {
+    display: flex;
+    width: 100%;
+
+    > * {
+        margin: 0;
+        padding: 0;
+        flex-basis: 100%;
+
+        svg {
+            transform: scale(1.5);
+        }
+    }
+
+    .mybutton {
+        box-shadow: 0 0 0 0 transparent !important;
+
+        &.not-scaleable{
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 70rem) {
+    .navbar-mob {
+        display: none;
+    }
+}

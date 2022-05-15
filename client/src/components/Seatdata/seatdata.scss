@@ -1,0 +1,139 @@
+.seatdata__main {
+    display: flex;
+    align-items: center;
+    font-size: $fz-CText;
+    width: 100%;
+    min-height: 50px;
+    height: 100%;
+    position: relative;
+
+    box-sizing: border-box;
+    padding: 0.3em 0;
+
+    > * {
+        flex-basis: 100%;
+        &.selectOptions {
+            flex: 0;
+            margin-right: 15px;
+        }
+    }
+
+    .information__box {
+        display: none;
+        align-items: center;
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.displayed__information__content {
+    position: fixed;
+    z-index: -20;
+    opacity: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0s;
+
+    margin-left: -20px;
+    width: 300px;
+    height: 200px;
+    &.show {
+        z-index: 20;
+        opacity: 1;
+    }
+    > * {
+        zoom: 0.4;
+        //transform: scaleX(0.4) scaleY(0.4);
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 17%;
+        width: 0;
+        height: 0;
+        border: 26px solid transparent;
+        border-bottom: 0;
+        margin-left: -26px;
+        margin-bottom: -26px;
+    }
+}
+
+@media (min-width: 70rem) {
+    .seatdata__main {
+        display: flex;
+        align-items: center;
+        font-size: $fz-CText;
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        box-sizing: border-box;
+        padding: 0.3em 0;
+
+        > * {
+            flex-basis: 100%;
+            &.selectOptions {
+                flex: 0;
+                margin-right: 15px;
+            }
+        }
+
+        .information__box {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .displayed__information__content {
+        position: fixed;
+        z-index: -20;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        transition: 0s;
+
+        margin-left: -20px;
+        width: 300px;
+        height: 200px;
+        &.show {
+            z-index: 20;
+            opacity: 1;
+        }
+        > * {
+            zoom: 0.4;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 17%;
+            width: 0;
+            height: 0;
+            border: 26px solid transparent;
+            border-bottom: 0;
+            margin-left: -26px;
+            margin-bottom: -26px;
+        }
+    }
+}

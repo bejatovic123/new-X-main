@@ -1,0 +1,103 @@
+header {
+    grid-area: MYHEADER;
+    height: 65px;
+    padding: 0;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    img {
+        height: 100%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .navbar-des {
+        display: none;
+    }
+
+    &.horizontal_middle_figures_head {
+        &:before {
+            display: none;
+            z-index: 1;
+            content: "";
+            position: absolute;
+            //top: 0.6em;
+            top: 0em;
+            left: -5%;
+            width: 30%;
+            height: 1em;
+            transform: skew(-20deg);
+        }
+
+        &:after {
+            display: none;
+            z-index: 1;
+            content: "";
+            position: absolute;
+            //bottom: 0.6em;
+            bottom: 0em;
+            right: -5%;
+            width: 30%;
+            height: 1em;
+            transform: skew(-20deg);
+        }
+    }
+}
+
+@media (min-width: 70rem) {
+    header {
+        grid-area: MYHEADER;
+        height: 75px;
+        padding: 0.5em 2em;
+        position: relative;
+
+        display: flex;
+
+        .navbar-des {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                height: 100%;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        
+
+        &.horizontal_middle_figures_head {
+            &:before {
+                display: none;
+                z-index: 1;
+                content: "";
+                position: absolute;
+                //top: 0.6em;
+                top: 0em;
+                left: -5%;
+                width: 30%;
+                height: 1em;
+                transform: skew(-20deg);
+            }
+
+            &:after {
+                display: none;
+                z-index: 1;
+                content: "";
+                position: absolute;
+                //bottom: 0.6em;
+                bottom: 0em;
+                right: -5%;
+                width: 30%;
+                height: 1em;
+                transform: skew(-20deg);
+            }
+        }
+    }
+}
